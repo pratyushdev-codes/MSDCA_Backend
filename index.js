@@ -22,7 +22,7 @@ app.get("/logo.png", (req, res) => {
 
 app.post("/razorpay", async (req, res) => {
   const payment_capture = 1;
-  const amount = 10;
+  const amount = 2950;
   const currency = "INR"; 
 
   const options = {
@@ -51,4 +51,4 @@ app.listen(1337, () => {
 
 app.get("/ping", (req,res) => {
   res.status(200).send("SERVER RUNNING");
-});
+}); 
