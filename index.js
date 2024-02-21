@@ -50,5 +50,5 @@ app.listen(1337, () => {
 });
 
 app.get("/ping", (req,res) => {
-  res.status(200).send("SERVER RUNNING");
+  res.status(200).send("SERVER RUNNING - Single Registration");
 }); 
