@@ -22,11 +22,11 @@ app.get("/logo.png", (req, res) => {
 
 app.post("/razorpay", async (req, res) => {
   const payment_capture = 1;
-  const amount = 2950;
+  const amount = 10;
   const currency = "INR"; 
 
   const options = {
-    amount: amount * 10,
+    amount: amount * 100,
     currency,
     receipt: shortid.generate(),
     payment_capture,
